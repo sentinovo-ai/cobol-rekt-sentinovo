@@ -40,6 +40,6 @@ jobs:
         run: |
           mvn -B deploy -DskipTests \
             -DdeployAtEnd=true \
-            -DaltDeploymentRepository=github::default::https://maven.pkg.github.com/sentinovo-ai/cobol-rekt
+            -DaltDeploymentRepository=github::default::https://maven.pkg.github.com/sentinovo-ai/cobol-rekt-sentinovo
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
