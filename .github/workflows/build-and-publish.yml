@@ -39,6 +39,6 @@ jobs:
       - name: Publish to GitHub Packages
         run: |
           mvn -B deploy -DskipTests \
-            -DaltDeploymentRepository=github::https://maven.pkg.github.com/sentinovo-ai/cobol-rekt
+            -DaltDeploymentRepository=github::default::https://maven.pkg.github.com/sentinovo-ai/cobol-rekt
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
